@@ -1,0 +1,197 @@
+body *{
+    box-sizing: boder-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+html {
+    background: url(https://the18.com/sites/default/files/styles/feature_image_with_focal/public/feature-images/20170926-The18-Image-Lionel-Messi-Man-Marking.jpg?itok=1t5nDmkV)
+    no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1, h2 {
+    color: #ff3333;
+    text-align: center;
+    background-color:  #003399;
+}
+
+h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-size: 30px;
+    margin-top: 230px;
+}
+
+#start-page {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+button{
+    display: block;
+    min-width: 200px;
+    min-height: 75px;
+    margin-top: 300px;
+    font-size: 35px;
+    border-radius: 3px;
+    color: white;
+    background-color: green;
+}
+
+button:hover {
+    background-color: #b78338;
+    cursor: pointer;
+}
+
+#question-page {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#question{
+    margin-top:0;
+}
+
+form {
+    color: white;
+}
+
+
+input[type='radio']{
+    width: 20px;
+    height: 20px;
+}
+
+
+fieldset {
+    display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0 10%;
+	min-height: 500px;
+	border: none;
+}
+.feedback-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+    margin-top:150px;
+      
+}
+
+.feedback-gif{
+    display: flex;
+    width:500px;
+}
+label {
+    margin-bottom: 20px;
+    font-size: 30px;
+    
+}
+
+#js-submit-button {
+	width: 50%;
+	margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+#status-bar{
+    background-color: white;
+}
+
+#question-count, #score-count { 
+    font-size: 20px;
+}
+
+#question-count{
+    margin-left: 20px;
+}
+
+#score-count{
+    float: right;
+    margin-right: 20px;
+}
+
+.feedback-page {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.answer-message {
+    margin-top: 0;
+}
+
+#js-next-button{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.final-score{
+    margin-top: 0;
+}
+
+#js-restart-button {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (min-width: 360px) {
+	#question-count, #score-count {
+		display: inline-block;
+		font-size: 14px;
+	}
+
+	#score-count {
+		float: right;
+	}	
+
+	h2 {
+	font-size: 25px;
+	}
+
+@media only screen and (min-width: 650px) {
+	.feedback-page {
+		display: block;
+		width: 650px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.feedback-page h2 {
+		width: 650px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 0;
+	}
+
+	
+	#question-count {
+		padding-left: 50px;
+		padding-bottom: 20px;
+	}
+
+	#score-count {
+		padding-right: 50px;
+		padding-bottom: 20px;
+	}
+}
